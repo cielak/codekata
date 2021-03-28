@@ -11,5 +11,11 @@ class TestBinarySearch:
     def test_finds_second_of_two(self):
         assert karate_chop(1, [-2, 1]) == 1
 
-    def test_finds_middle_item(self):
+    def test_finds_first_of_three(self):
+        assert karate_chop(1, [1, 2, 3]) == 0
+
+    def test_finds_middle_of_three(self):
         assert karate_chop(4, [1, 4, 8]) == 1
+
+    def test_finds_third_of_three(self):
+        assert karate_chop(6, [2, 4, 6]) == 2
