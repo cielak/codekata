@@ -9,3 +9,6 @@ def karate_chop(what: int, items: List[int]) -> int:
     if value_at_cut < what:
         lower_range_boundary = cutting_position + 1
         return lower_range_boundary + karate_chop(what, items[lower_range_boundary:])
+    if value_at_cut > what:
+        upper_range_boundary = cutting_position
+        return karate_chop(what, items[:upper_range_boundary])
