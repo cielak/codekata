@@ -7,7 +7,6 @@ class TestBinarySearch:
     def test_finds_single_item(self):
         assert karate_chop(5, [5]) == 0
 
-    @pytest.mark.xfail
     def test_finds_first_of_two(self):
         assert karate_chop(1, [1, 2]) == 0
 
